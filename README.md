@@ -10,6 +10,20 @@ containers in Linux batch systems and interactive clusters that are
 managed by other entities such as grid infrastructures or externally
 managed batch or interactive systems.
 
+## Information and usage
+
+The repository contains the following:
+
+* Directory `utils` has several scripts both in bash and python.
+* Directory `engines` contains the current version of binaries and libraries
+  of the execution engines.
+* Directory `tarballs` contains the tarball of each binary or library.
+
+The bash script `utils/make-tar.sh` makes the tarballs and produces a CSV `flist.csv`
+with the filename and corresponding sha256sum.
+
+
+
 ## Contributing
 
 See: [Contributing](CONTRIBUTING.md)

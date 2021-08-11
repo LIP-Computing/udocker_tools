@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Copyright 2020 LIP
+# Copyright 2021 LIP
 #
 # Author: Mario David <mariojmdavid@gmail.com>
 #
