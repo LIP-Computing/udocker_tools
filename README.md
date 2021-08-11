@@ -1,7 +1,6 @@
 ![logo](docs/logo-small.png)
 
-udocker_setup is an installer for udocker with a rich CLI, allowing
-flexibility in installed modules and execution engines.
+udocker_tools contains modules and execution engines for udocker.
 
 udocker is a basic user tool to execute simple docker containers in user
 space without requiring root privileges. Enables download and execution
@@ -18,7 +17,7 @@ See: [Contributing](CONTRIBUTING.md)
 ## Licensing
 
 Redistribution, commercial use and code changes must regard all licenses
-shipped with udocker. These include the [udocker_setup license](LICENSE) and the
+shipped with udocker. These include the [udocker_tools license](LICENSE) and the
 individual licenses of the external tools and libraries packaged for use
 with udocker.
 
