@@ -9,7 +9,6 @@
 
 """Produces a json file metadata.json with information of all modules"""
 
-import os
 import json
 import csv
 import pprint
@@ -22,7 +21,6 @@ def create_jsonmodule():
                 "os": None,
                 "os_ver": None,
                 "kernel_ver": None,
-                "dependencies": list(),
                 "sha256sum": None,
                 "urls": list(),
                 "docs_url": list()}
@@ -51,5 +49,8 @@ if __name__ == '__main__':
 
             line_count += 1
             all_mod.append(mod_json)
+
+    with open(fjson, 'w') as jdump:
+        json.dump(all_mod, jdump, indent=4)
 
     pprint.pprint(all_mod)
