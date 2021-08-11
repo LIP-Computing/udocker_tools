@@ -20,9 +20,12 @@ The repository contains the following:
 * Directory `tarballs` contains the tarball of each binary or library.
 
 The bash script `utils/make-tar.sh` makes the tarballs and produces a CSV `flist.csv`
-with the filename and corresponding sha256sum.
+with the filename and corresponding sha256sum. This file was edited to complete with the other
+columns to `flist-keep.csv`
 
-
+The python script `utils/make-meta.py` reads `flist-keep.csv` and produces the json file
+`metadata.json`, containing all information needed for the udocker commands to install one
+or more modules.
 
 ## Contributing
 
