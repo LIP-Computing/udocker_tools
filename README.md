@@ -22,14 +22,22 @@ shipped with udocker. These include the [udocker_setup license](LICENSE) and the
 individual licenses of the external tools and libraries packaged for use
 with udocker.
 
-## Acknowledgements
+## Acknowledgements and further documentation
 
-* Docker <https://www.docker.com/>
-* PRoot <https://proot-me.github.io/>
-* Fakechroot <https://github.com/dex4er/fakechroot/wiki>
+* Docker: <https://www.docker.com/>
+* PRoot:
+  * <https://proot-me.github.io/>
+  * <https://github.com/jorge-lip/proot-udocker>
+* Fakechroot:
+  * <https://github.com/dex4er/fakechroot/wiki>
+  * For libfakechroot-glibc: <https://github.com/jorge-lip/libfakechroot-glibc-udocker>
+  * For libfakechroot-musl: <https://github.com/jorge-lip/libfakechroot-musl-udocker>
 * runC <https://runc.io/>
 * crun <https://github.com/containers/crun>
 * Singularity <https://www.sylabs.io/>
+* PatchELF:
+  * <https://github.com/NixOS/patchelf>
+  * <https://github.com/jorge-lip/patchelf-udocker>
 * Open Container Initiative <https://www.opencontainers.org/>
 * EGI-ACE <https://www.egi.eu/projects/egi-ace/>
 * EOSC-Synergy <https://www.eosc-synergy.eu/>
