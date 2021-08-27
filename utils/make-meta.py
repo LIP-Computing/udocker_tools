@@ -14,7 +14,8 @@ import csv
 import pprint
 
 def create_jsonmodule():
-    mod_json = {"module": None,
+    mod_json = {"uid": None,
+                "module": None,
                 "fname": None,
                 "version": None,
                 "arch": None,

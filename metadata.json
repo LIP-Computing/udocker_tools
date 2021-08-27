@@ -1,5 +1,6 @@
 [
     {
+        "uid": "1",
         "module": "crun",
         "fname": "crun-x86_64.tgz",
         "version": "0.17.5-ac41-dirty",
@@ -15,6 +16,7 @@
         "docs_url": []
     },
     {
+        "uid": "2",
         "module": "patchelf",
         "fname": "patchelf-x86_64.tgz",
         "version": "0.9",
@@ -30,6 +32,7 @@
         "docs_url": []
     },
     {
+        "uid": "3",
         "module": "proot",
         "fname": "proot-arm.tgz",
         "version": "5.1.0",
@@ -45,6 +48,7 @@
         "docs_url": []
     },
     {
+        "uid": "4",
         "module": "proot",
         "fname": "proot-arm64.tgz",
         "version": "5.1.0",
@@ -60,6 +64,7 @@
         "docs_url": []
     },
     {
+        "uid": "5",
         "module": "proot",
         "fname": "proot-arm64-4_8_0.tgz",
         "version": "5.1.0",
@@ -75,6 +80,7 @@
         "docs_url": []
     },
     {
+        "uid": "6",
         "module": "proot",
         "fname": "proot-x86.tgz",
         "version": "5.1.0",
@@ -90,6 +96,7 @@
         "docs_url": []
     },
     {
+        "uid": "7",
         "module": "proot",
         "fname": "proot-x86-4_8_0.tgz",
         "version": "5.1.0",
@@ -105,6 +112,7 @@
         "docs_url": []
     },
     {
+        "uid": "8",
         "module": "proot",
         "fname": "proot-x86_64.tgz",
         "version": "5.1.0",
@@ -120,6 +128,7 @@
         "docs_url": []
     },
     {
+        "uid": "9",
         "module": "proot",
         "fname": "proot-x86_64-4_8_0.tgz",
         "version": "5.1.0",
@@ -135,6 +144,7 @@
         "docs_url": []
     },
     {
+        "uid": "10",
         "module": "runc",
         "fname": "runc-x86_64.tgz",
         "version": "1.0.0-rc5",
@@ -150,6 +160,7 @@
         "docs_url": []
     },
     {
+        "uid": "11",
         "module": "libfakechroot",
         "fname": "libfakechroot-Alpine-3.10-x86_64.so.tgz",
         "version": "",
@@ -165,6 +176,7 @@
         "docs_url": []
     },
     {
+        "uid": "12",
         "module": "libfakechroot",
         "fname": "libfakechroot-Alpine-3.11-x86_64.so.tgz",
         "version": "",
@@ -180,6 +192,7 @@
         "docs_url": []
     },
     {
+        "uid": "13",
         "module": "libfakechroot",
         "fname": "libfakechroot-Alpine-3.12-x86_64.so.tgz",
         "version": "",
@@ -195,6 +208,7 @@
         "docs_url": []
     },
     {
+        "uid": "14",
         "module": "libfakechroot",
         "fname": "libfakechroot-Alpine-3.13-x86_64.so.tgz",
         "version": "",
@@ -210,6 +224,7 @@
         "docs_url": []
     },
     {
+        "uid": "15",
         "module": "libfakechroot",
         "fname": "libfakechroot-Alpine-3.6-x86_64.so.tgz",
         "version": "",
@@ -225,6 +240,7 @@
         "docs_url": []
     },
     {
+        "uid": "16",
         "module": "libfakechroot",
         "fname": "libfakechroot-Alpine-3.8-x86_64.so.tgz",
         "version": "",
@@ -240,6 +256,7 @@
         "docs_url": []
     },
     {
+        "uid": "17",
         "module": "libfakechroot",
         "fname": "libfakechroot-Alpine-3.9-x86_64.so.tgz",
         "version": "",
@@ -255,6 +272,7 @@
         "docs_url": []
     },
     {
+        "uid": "18",
         "module": "libfakechroot",
         "fname": "libfakechroot-CentOS-6-x86_64.so.tgz",
         "version": "",
@@ -270,6 +288,7 @@
         "docs_url": []
     },
     {
+        "uid": "19",
         "module": "libfakechroot",
         "fname": "libfakechroot-CentOS-7-x86_64.so.tgz",
         "version": "",
@@ -285,6 +304,7 @@
         "docs_url": []
     },
     {
+        "uid": "20",
         "module": "libfakechroot",
         "fname": "libfakechroot-CentOS-8-x86_64.so.tgz",
         "version": "",
@@ -300,6 +320,7 @@
         "docs_url": []
     },
     {
+        "uid": "21",
         "module": "libfakechroot",
         "fname": "libfakechroot-Fedora-25-x86_64.so.tgz",
         "version": "",
@@ -315,6 +336,7 @@
         "docs_url": []
     },
     {
+        "uid": "22",
         "module": "libfakechroot",
         "fname": "libfakechroot-Fedora-29-x86_64.so.tgz",
         "version": "",
@@ -330,6 +352,7 @@
         "docs_url": []
     },
     {
+        "uid": "23",
         "module": "libfakechroot",
         "fname": "libfakechroot-Fedora-30-x86_64.so.tgz",
         "version": "",
@@ -345,6 +368,7 @@
         "docs_url": []
     },
     {
+        "uid": "24",
         "module": "libfakechroot",
         "fname": "libfakechroot-Fedora-31-x86_64.so.tgz",
         "version": "",
@@ -360,6 +384,7 @@
         "docs_url": []
     },
     {
+        "uid": "25",
         "module": "libfakechroot",
         "fname": "libfakechroot-Fedora-32-x86_64.so.tgz",
         "version": "",
@@ -375,6 +400,7 @@
         "docs_url": []
     },
     {
+        "uid": "26",
         "module": "libfakechroot",
         "fname": "libfakechroot-Fedora-33-x86_64.so.tgz",
         "version": "",
@@ -390,6 +416,7 @@
         "docs_url": []
     },
     {
+        "uid": "27",
         "module": "libfakechroot",
         "fname": "libfakechroot-Fedora-34-x86_64.so.tgz",
         "version": "",
@@ -405,6 +432,7 @@
         "docs_url": []
     },
     {
+        "uid": "28",
         "module": "libfakechroot",
         "fname": "libfakechroot-Ubuntu-12-x86_64.so.tgz",
         "version": "",
@@ -420,6 +448,7 @@
         "docs_url": []
     },
     {
+        "uid": "29",
         "module": "libfakechroot",
         "fname": "libfakechroot-Ubuntu-14-x86_64.so.tgz",
         "version": "",
@@ -435,6 +464,7 @@
         "docs_url": []
     },
     {
+        "uid": "30",
         "module": "libfakechroot",
         "fname": "libfakechroot-Ubuntu-16-x86_64.so.tgz",
         "version": "",
@@ -450,6 +480,7 @@
         "docs_url": []
     },
     {
+        "uid": "31",
         "module": "libfakechroot",
         "fname": "libfakechroot-Ubuntu-18-x86_64.so.tgz",
         "version": "",
@@ -465,6 +496,7 @@
         "docs_url": []
     },
     {
+        "uid": "32",
         "module": "libfakechroot",
         "fname": "libfakechroot-Ubuntu-19-x86_64.so.tgz",
         "version": "",
@@ -480,6 +512,7 @@
         "docs_url": []
     },
     {
+        "uid": "33",
         "module": "libfakechroot",
         "fname": "libfakechroot-Ubuntu-20-x86_64.so.tgz",
         "version": "",
@@ -495,6 +528,7 @@
         "docs_url": []
     },
     {
+        "uid": "34",
         "module": "libfakechroot",
         "fname": "libfakechroot-Ubuntu-21-x86_64.so.tgz",
         "version": "",
