@@ -1,6 +1,6 @@
 ![logo](docs/logo-small.png)
 
-udocker_tools contains modules and execution engines for udocker.
+This repository (udocker_tools) contains modules and execution engines for udocker.
 
 udocker is a basic user tool to execute simple docker containers in user
 space without requiring root privileges. Enables download and execution
@@ -26,6 +26,21 @@ columns to `flist-keep.csv`
 The python script `utils/make-meta.py` reads `flist-keep.csv` and produces the json file
 `metadata.json`, containing all information needed for the udocker commands to install one
 or more modules.
+
+## How to update this repository
+
+The udocker tools tarball are build in the following repository:
+
+* <https://github.com/jorge-lip/udocker-builds>
+
+Download the latest tarball available in
+<https://github.com/jorge-lip/udocker-builds/tree/master/tarballs>
+
+For example:
+
+```bash
+
+```
 
 ## Contributing
 
