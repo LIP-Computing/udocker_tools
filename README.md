@@ -33,13 +33,13 @@ The udocker tools tarball are build in the following repository:
 
 * <https://github.com/jorge-lip/udocker-builds>
 
-Download the latest tarball available in
-<https://github.com/jorge-lip/udocker-builds/tree/master/tarballs>
-
-For example:
+Execute the following script, it downloads a given version of the udocker tools tarball, unpacks it,
+tar and zip each individual binary and lib, calculates the sha256 checksum, and puts it into the
+repository directory  `tarballs/`, it also produces a new flist.csv:
 
 ```bash
-
+cd utils
+./make-tar.sh 1.2.9
 ```
 
 ## Contributing
