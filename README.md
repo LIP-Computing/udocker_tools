@@ -15,8 +15,6 @@ managed batch or interactive systems.
 The repository contains the following:
 
 * Directory `utils` has several scripts both in bash and python.
-* Directory `engines` contains the current version of binaries and libraries
-  of the execution engines.
 * Directory `tarballs` contains the tarball of each binary or library.
 
 The bash script `utils/make-tar.sh` makes the tarballs and produces a CSV `flist.csv`
