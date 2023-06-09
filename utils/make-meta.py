@@ -86,6 +86,15 @@ def get_libfchroot(rel_tar_dir, ref_mod_fkchroot):
         mod_json['module'] = ref_mod_fkchroot['module']
         mod_json['version'] = ref_mod_fkchroot['version']
         mod_json['dependencies'].append('patchelf-x86_64.tgz')
+
+        opsys_ver = lib_fkchr.removesuffix('-x86_64.so.tgz').removeprefix('libfakechroot-')
+        if '-' in opsys_ver:
+            (opsys, os_ver) = opsys_ver.split('-')
+            mod_json['os'] = opsys
+            mod_json['os_ver'] = os_ver
+        else:
+            mod_json['os'] = opsys_ver
+
         for urldir in URL_DIRS:
             mod_json["urls"].append(urldir + lib_fkchr)
 
@@ -109,10 +118,10 @@ if __name__ == '__main__':
     all_mod = init_all_mods(file_csv)
     ref_mod_fkchroot = get_ref_fkchroot(all_mod)
     libs_fkchroot = get_libfchroot(rel_tar_dir, ref_mod_fkchroot)
+    all_mod += libs_fkchroot
 
-#    pprint.pprint(all_mod)
-#    pprint.pprint(ref_mod_fkchroot)
-    pprint.pprint(libs_fkchroot)
+
+    pprint.pprint(all_mod)
 
 
     # with open(fjson, 'w') as jdump:
