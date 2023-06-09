@@ -9,44 +9,40 @@
 cd ..
 DIR=`pwd`
 TAR_DIR="${DIR}/tarballs"
-FILE_LIST=${DIR}/flist.csv
+#FILE_LIST=${DIR}/flist.csv
 TMPDIR=${HOME}/tmpdir
-mkdir -p ${TMPDIR}
-
-if [ $# -ne 1 ]
-then
-    echo "Usage: $0 <udocker tools tarball version>"
-    echo "Example: $0 1.2.9"
-    exit 1
-fi
-
-echo "wget udocker tools tarball to ${TMPDIR}"
-cd ${TMPDIR}
-wget --no-check-certificate https://download.ncg.ingrid.pt/webdav/udocker/udocker-englib-${1}.tar.gz
-
-echo "unzip/untar udocker-englib-${1}.tar.gz"
-tar zxvf udocker-englib-${1}.tar.gz
 
 BIN="${TMPDIR}/udocker_dir/bin"
 LIB="${TMPDIR}/udocker_dir/lib"
 
-rm ${FILE_LIST}
+#rm ${FILE_LIST}
+rm -f ${TAR_DIR}/*
+
 cd ${BIN}
-for fname in `find * -type f`
+echo "In dir: ${BIN}"
+for fname in `find . -type f`
 do
     TAR="${TAR_DIR}/${fname}.tgz"
     tar zcvf ${TAR} ${fname}
-    line=`sha256sum ${TAR}`
-    SHA256=$(echo $line | awk -F' ' '{printf "%s", $1}' | tr -d '"')
-    echo "${fname}.tgz,${SHA256}" >> ${FILE_LIST}
+#    line=`sha256sum ${TAR}`
+#    SHA256=$(echo $line | awk -F' ' '{printf "%s", $1}' | tr -d '"')
+#    echo "${fname}.tgz,${SHA256}" >> ${FILE_LIST}
 done
 
 cd ${LIB}
-for fname in `find * -name 'libfakechroot-*' -type f`
+echo "In dir: ${LIB}"
+for fname in `find . -name 'libfakechroot-*' -type f`
 do
     TAR="${TAR_DIR}/${fname}.tgz"
     tar zcvf ${TAR} ${fname}
-    line=`sha256sum ${TAR}`
-    SHA256=$(echo $line | awk -F' ' '{printf "%s", $1}' | tr -d '"')
-    echo "${fname}.tgz,${SHA256}" >> ${FILE_LIST}
+done
+
+cd ${LIB}
+echo "In dir: ${LIB}"
+for fname in `find . -name 'libfakechroot-*' -type l`
+do
+    link_to=`readlink ${fname} `
+    echo "TARZipping: ${fname} and ${link_to}"
+    TAR="${TAR_DIR}/${fname}.tgz"
+    tar zcvfp ${TAR} ${fname} ${link_to}
 done
