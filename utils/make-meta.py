@@ -23,8 +23,9 @@ def create_jsonmodule():
                 "os_ver": None,
                 "kernel_ver": None,
                 "sha256sum": None,
-                "urls": list(),
-                "docs_url": list()}
+                "urls": [],
+                "dependencies": [],
+                "docs_url": []}
     return mod_json
 
 if __name__ == '__main__':

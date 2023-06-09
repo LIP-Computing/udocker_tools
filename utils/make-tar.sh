@@ -46,3 +46,6 @@ do
     TAR="${TAR_DIR}/${fname}.tgz"
     tar zcvfp ${TAR} ${fname} ${link_to}
 done
+
+cd ${LIB}
+tar zcvfp ${TAR_DIR}/libfakechroot.tgz libfakechroot-*
