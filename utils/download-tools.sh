@@ -16,7 +16,7 @@ mkdir -p ${TMPDIR}
 if [ $# -ne 1 ]
 then
     echo "Usage: $0 <udocker tools tarball version>"
-    echo "Example: $0 1.2.9"
+    echo "Example: $0 1.2.10"
     exit 1
 fi
 

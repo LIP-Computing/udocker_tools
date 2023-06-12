@@ -16,14 +16,9 @@ The repository contains the following:
 
 * Directory `utils` has several scripts both in bash and python.
 * Directory `tarballs` contains the tarball of each binary or library.
-
-The bash script `utils/make-tar.sh` makes the tarballs and produces a CSV `flist.csv`
-with the filename and corresponding sha256sum. This file was edited to complete with the other
-columns to `flist-keep.csv`
-
-The python script `utils/make-meta.py` reads `flist-keep.csv` and produces the json file
-`metadata.json`, containing all information needed for the udocker commands to install one
-or more modules.
+* Directory `docs` contains the `COPYING`and `LICENSE` of the binary or library tools.
+* Directory `data` contains the CSV and `metadata.json` with information about all binary and
+  library tools necessary for the udocker installation CLI.
 
 ## How to update this repository
 
@@ -31,14 +26,26 @@ The udocker tools tarball are build in the following repository:
 
 * <https://github.com/jorge-lip/udocker-builds>
 
-Execute the following script, it downloads a given version of the udocker tools tarball, unpacks it,
-tar and zip each individual binary and lib, calculates the sha256 checksum, and puts it into the
-repository directory  `tarballs/`, it also produces a new flist.csv:
+Execute the following script, it downloads a given version of the udocker tools tarball and unpacks
+it into a temporary directory:
 
 ```bash
 cd utils
-./make-tar.sh 1.2.9
+./download-tools.sh 1.2.10
 ```
+
+Execute the following script, it tars and zip all binaries and libraries into individual tarballs
+and puts it into this repository `tarballs` directory:
+
+```bash
+cd utils
+./make-tar.sh
+```
+
+Execute the following python script, it reads the csv `data/module-keep.csv` that contains some
+basic manual information about the binaries and libraries, it calculates the sha256 checksum and
+produces the json file `metadata.json`, containing all information needed for the udocker commands
+to install one or more modules.
 
 ## Contributing
 

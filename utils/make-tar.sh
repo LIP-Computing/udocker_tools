@@ -9,7 +9,6 @@
 cd ..
 DIR=`pwd`
 TAR_DIR="${DIR}/tarballs"
-#FILE_LIST=${DIR}/flist.csv
 TMPDIR=${HOME}/tmpdir
 
 BIN="${TMPDIR}/udocker_dir/bin"
