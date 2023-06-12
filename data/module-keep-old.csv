@@ -1,6 +1,0 @@
-module,version
-crun,1.6
-patchelf,0.9
-proot,5.1.1
-runc,1.1.4
-libfakechroot,2.18

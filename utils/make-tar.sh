@@ -24,8 +24,6 @@ do
     TAR="${TAR_DIR}/${fname}.tgz"
     tar zcvf ${TAR} ${fname}
 #    line=`sha256sum ${TAR}`
-#    SHA256=$(echo $line | awk -F' ' '{printf "%s", $1}' | tr -d '"')
-#    echo "${fname}.tgz,${SHA256}" >> ${FILE_LIST}
 done
 
 cd ${LIB}
