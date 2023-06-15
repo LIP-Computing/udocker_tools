@@ -76,6 +76,7 @@ def get_ref_fkchroot():
 
     return ref_mod
 
+
 def get_libfchroot(tar_dir, ref_module_fkchroot):
     '''Get the list of all libfakechroot for all OSs and Versions'''
     list_libs = [os.path.basename(x) for x in glob.glob(tar_dir + 'libfakechroot-*.so.tgz')]
@@ -112,8 +113,8 @@ def get_sha256(tar_dir):
     nuid = 1
     for mod in ALL_MODULES:
         tarball = tar_dir + mod['fname']
-        with open(tarball,"rb") as f:
-            fread_bytes = f.read() # read entire file as bytes
+        with open(tarball, "rb") as f:
+            fread_bytes = f.read()      # read entire file as bytes
             readable_hash = hashlib.sha256(fread_bytes).hexdigest()
             mod['sha256sum'] = readable_hash
             mod['uid'] = nuid

@@ -13,7 +13,6 @@ TMPDIR=${HOME}/tmpdir
 BIN="${TMPDIR}/udocker_dir/bin"
 LIB="${TMPDIR}/udocker_dir/lib"
 
-rm -f ${TAR_DIR}/*
 cd ${BIN}
 echo "In dir: ${BIN}"
 for fname in `find . -type f`
