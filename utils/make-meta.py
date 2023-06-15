@@ -34,6 +34,7 @@ def create_jsonmodule():
                 "os_ver": None,
                 "kernel_ver": None,
                 "sha256sum": None,
+                "installdir": None,
                 "urls": [],
                 "dependencies": [],
                 "docs_url": []}
@@ -59,10 +60,10 @@ def init_all_mods(fcsv):
             for urldoc in URL_DOCS:
                 mod_json["docs_url"].append(urldoc + row["docs"])
 
-            line_count += 1
             if mod_json['module'] == 'libfakechroot':
                 mod_json['dependencies'].append('patchelf-x86_64.tgz')
 
+            line_count += 1
             ALL_MODULES.append(mod_json)
 
 

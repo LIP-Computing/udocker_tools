@@ -9,7 +9,6 @@
 cd ..
 DIR=`pwd`
 TAR_DIR="${DIR}/tarballs"
-FILE_LIST=${DIR}/flist.csv
 TMPDIR=${HOME}/tmpdir
 mkdir -p ${TMPDIR}
 
@@ -21,9 +20,10 @@ then
 fi
 
 echo "wget udocker tools tarball to ${TMPDIR}"
-cd ${TMPDIR}
+cd ${TAR_DIR}
 rm -rf *
-wget --no-check-certificate https://download.ncg.ingrid.pt/webdav/udocker/udocker-englib-${1}.tar.gz
 
+#wget --no-check-certificate https://download.ncg.ingrid.pt/webdav/udocker/udocker-englib-${1}.tar.gz
+wget https://download.ncg.ingrid.pt/webdav/udocker/udocker-englib-${1}.tar.gz
 echo "unzip/untar udocker-englib-${1}.tar.gz"
-tar zxvf udocker-englib-${1}.tar.gz
+tar zxvf udocker-englib-${1}.tar.gz -C ${TMPDIR}
