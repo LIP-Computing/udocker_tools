@@ -25,6 +25,7 @@ URL_DOCS = ["https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/",
 
 
 def create_jsonmodule():
+    '''Create json structure for a module'''
     mod_json = {"uid": None,
                 "module": None,
                 "fname": None,
@@ -35,6 +36,7 @@ def create_jsonmodule():
                 "kernel_ver": None,
                 "sha256sum": None,
                 "installdir": None,
+                "docs": None,
                 "urls": [],
                 "dependencies": [],
                 "docs_url": []}
@@ -87,6 +89,7 @@ def get_libfchroot(tar_dir, ref_module_fkchroot):
         mod_json['arch'] = ref_module_fkchroot['arch']
         mod_json['module'] = ref_module_fkchroot['module']
         mod_json['version'] = ref_module_fkchroot['version']
+        mod_json['docs'] = ref_module_fkchroot['docs']
         mod_json['dependencies'].append('patchelf-x86_64.tgz')
 
         opsys_ver = lib_fkchr.removesuffix('-x86_64.so.tgz').removeprefix('libfakechroot-')
