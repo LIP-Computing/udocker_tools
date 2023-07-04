@@ -254,15 +254,15 @@
         "kernel_ver": "",
         "sha256sum": "c81a26f5bc9d363243d6d319120b57cd7949a5a46469df68c7a845f8ecee0e49",
         "installdir": "./",
-        "docs": "",
+        "docs": "udocker_all_lic.tgz",
         "urls": [
             "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/udocker-englib-1.2.10.tar.gz",
             "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/udocker-englib-1.2.10.tar.gz"
         ],
         "dependencies": [],
         "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/"
+            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/udocker_all_lic.tgz",
+            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/udocker_all_lic.tgz"
         ]
     },
     {

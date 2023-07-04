@@ -10,4 +10,4 @@ proot,5.1.1,x86_64,>=4.8.0,proot-x86_64-4_8_0.tgz,COPYING.proot,bin/
 runc,1.1.4,x86_64,,runc-x86_64.tgz,LICENSE.runc,bin/
 patchelf,0.9,x86_64,,patchelf-x86_64.tgz,COPYING.patchelf,bin/
 libfakechroot,2.18,x86_64,,libfakechroot.tgz,LIC-COPY-fakechroot.tgz,lib/
-all,1.2.10,,,udocker-englib-1.2.10.tar.gz,,./
+all,1.2.10,,,udocker-englib-1.2.10.tar.gz,udocker_all_lic.tgz,./
