@@ -64,7 +64,8 @@ def init_all_mods(fcsv):
                 mod_json['docs_url'].append(urldoc + row['docs'])
 
             if mod_json['module'] == 'libfakechroot':
-                mod_json['dependencies'].append('patchelf-x86_64.tgz')
+                depend = 'patchelf-' + mod_json['arch'] + '.tgz'
+                mod_json['dependencies'].append(depend)
 
             line_count += 1
             ALL_MODULES.append(mod_json)
@@ -130,9 +131,9 @@ if __name__ == '__main__':
     fjson = '../data/metadata.json'
     file_csv = '../data/module-keep.csv'
     init_all_mods(file_csv)
-    ref_mod_fkchroot = get_ref_fkchroot()
-    libs_fkchroot = get_libfchroot(rel_tar_dir, ref_mod_fkchroot)
-    ALL_MODULES += libs_fkchroot
+    # ref_mod_fkchroot = get_ref_fkchroot()
+    # libs_fkchroot = get_libfchroot(rel_tar_dir, ref_mod_fkchroot)
+    # ALL_MODULES += libs_fkchroot
     get_sha256(rel_tar_dir)
     pprint.pprint(ALL_MODULES)
     with open(fjson, 'w', encoding='utf-8') as jdump:

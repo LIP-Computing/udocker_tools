@@ -2,14 +2,15 @@
     {
         "uid": 1,
         "module": "crun",
-        "fname": "crun-x86_64.tgz",
+        "tarball": "crun-x86_64.tgz",
         "version": "1.6",
         "arch": "x86_64",
         "os": null,
         "os_ver": null,
         "kernel_ver": "",
-        "sha256sum": "14b8dc86452717306ee3f684c6b82927eacde816fa98ab43839fffe1230fd75d",
+        "sha256sum": "4907b4005436686e453297f7e011ddb655c410429f711d787546f5ecceb03048",
         "installdir": "bin/",
+        "fname": "crun-x86_64",
         "docs": "COPYING.crun",
         "urls": [
             "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/crun-x86_64.tgz",
@@ -24,14 +25,15 @@
     {
         "uid": 2,
         "module": "proot",
-        "fname": "proot-arm.tgz",
+        "tarball": "proot-arm.tgz",
         "version": "5.1.1",
         "arch": "arm",
         "os": null,
         "os_ver": null,
         "kernel_ver": "<4.8.0",
-        "sha256sum": "5a058dd20ec163b366f276f57469a2f45409186d4cefa0ecc3ac07b4267a60c8",
+        "sha256sum": "382959d1302647c2483c6150b249d4575a13672abe47985af6bc917a3efcdcea",
         "installdir": "bin/",
+        "fname": "proot-arm",
         "docs": "COPYING.proot",
         "urls": [
             "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/proot-arm.tgz",
@@ -46,36 +48,15 @@
     {
         "uid": 3,
         "module": "proot",
-        "fname": "proot-arm64.tgz",
+        "tarball": "proot-arm64-4_8_0.tgz",
         "version": "5.1.1",
         "arch": "arm64",
         "os": null,
         "os_ver": null,
-        "kernel_ver": "<4.8.0",
-        "sha256sum": "886c9098a67ca25b0de2ce933f7106469e90d696acec28d886b14018603e7957",
+        "kernel_ver": "",
+        "sha256sum": "d4206ae2a6577936a71ba41b473634ea34fc538bf315cee09ca25f6123d9c967",
         "installdir": "bin/",
-        "docs": "COPYING.proot",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/proot-arm64.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/proot-arm64.tgz"
-        ],
-        "dependencies": [],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/COPYING.proot",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/COPYING.proot"
-        ]
-    },
-    {
-        "uid": 4,
-        "module": "proot",
-        "fname": "proot-arm64-4_8_0.tgz",
-        "version": "5.1.1",
-        "arch": "arm64",
-        "os": null,
-        "os_ver": null,
-        "kernel_ver": ">=4.8.0",
-        "sha256sum": "f749dbb2ed784843f9de89ab9ab05c0e523f0cfd5cc1aa576572909d8e85029a",
-        "installdir": "bin/",
+        "fname": "proot-arm64-4_8_0",
         "docs": "COPYING.proot",
         "urls": [
             "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/proot-arm64-4_8_0.tgz",
@@ -88,16 +69,63 @@
         ]
     },
     {
+        "uid": 4,
+        "module": "proot",
+        "tarball": "proot-armel.tgz",
+        "version": "5.1.1",
+        "arch": "armel",
+        "os": null,
+        "os_ver": null,
+        "kernel_ver": "",
+        "sha256sum": "3929bbf5227337228b0d4941bdc42ed9f9845c13f1d17cddc9da902a25ac83f0",
+        "installdir": "bin/",
+        "fname": "proot-armel",
+        "docs": "COPYING.proot",
+        "urls": [
+            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/proot-armel.tgz",
+            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/proot-armel.tgz"
+        ],
+        "dependencies": [],
+        "docs_url": [
+            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/COPYING.proot",
+            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/COPYING.proot"
+        ]
+    },
+    {
         "uid": 5,
         "module": "proot",
-        "fname": "proot-x86.tgz",
+        "tarball": "proot-armhf.tgz",
+        "version": "5.1.1",
+        "arch": "armhf",
+        "os": null,
+        "os_ver": null,
+        "kernel_ver": "",
+        "sha256sum": "aba7fbcd3ce5220440214241c43ddabbf3f7680f7ff1229b171473432c1b8776",
+        "installdir": "bin/",
+        "fname": "proot-armhf",
+        "docs": "COPYING.proot",
+        "urls": [
+            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/proot-armhf.tgz",
+            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/proot-armhf.tgz"
+        ],
+        "dependencies": [],
+        "docs_url": [
+            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/COPYING.proot",
+            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/COPYING.proot"
+        ]
+    },
+    {
+        "uid": 6,
+        "module": "proot",
+        "tarball": "proot-x86.tgz",
         "version": "5.1.1",
         "arch": "x86",
         "os": null,
         "os_ver": null,
         "kernel_ver": "<4.8.0",
-        "sha256sum": "a6e9db938ed184beeda11a13997c2a8ec883c829c06bb6513effc441070690ed",
+        "sha256sum": "b5f08867f3dca309482e2c4e8524291480799632af97e3fdb69050017b617d1b",
         "installdir": "bin/",
+        "fname": "proot-x86",
         "docs": "COPYING.proot",
         "urls": [
             "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/proot-x86.tgz",
@@ -110,16 +138,17 @@
         ]
     },
     {
-        "uid": 6,
+        "uid": 7,
         "module": "proot",
-        "fname": "proot-x86-4_8_0.tgz",
+        "tarball": "proot-x86-4_8_0.tgz",
         "version": "5.1.1",
         "arch": "x86",
         "os": null,
         "os_ver": null,
         "kernel_ver": ">=4.8.0",
-        "sha256sum": "37ea6312882517d0683ba18193075474c0195aa60d3360c0dc82c2a0a103f9e8",
+        "sha256sum": "a48dd05df9d8c291b510a337722ebc7e0bb636f4b019df27efc8161f4d3c82c4",
         "installdir": "bin/",
+        "fname": "proot-x86-4_8_0",
         "docs": "COPYING.proot",
         "urls": [
             "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/proot-x86-4_8_0.tgz",
@@ -132,16 +161,17 @@
         ]
     },
     {
-        "uid": 7,
+        "uid": 8,
         "module": "proot",
-        "fname": "proot-x86_64.tgz",
+        "tarball": "proot-x86_64.tgz",
         "version": "5.1.1",
         "arch": "x86_64",
         "os": null,
         "os_ver": null,
         "kernel_ver": "<4.8.0",
-        "sha256sum": "66be83d02326f9941a6abac37d42e146c3e9c3f9e4e0327cabc251cc632b40a1",
+        "sha256sum": "ec5c76d97b7262e75edf11706924fdf0d050514f163ea6b624f6b73d967304a8",
         "installdir": "bin/",
+        "fname": "proot-x86_64",
         "docs": "COPYING.proot",
         "urls": [
             "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/proot-x86_64.tgz",
@@ -154,16 +184,17 @@
         ]
     },
     {
-        "uid": 8,
+        "uid": 9,
         "module": "proot",
-        "fname": "proot-x86_64-4_8_0.tgz",
+        "tarball": "proot-x86_64-4_8_0.tgz",
         "version": "5.1.1",
         "arch": "x86_64",
         "os": null,
         "os_ver": null,
         "kernel_ver": ">=4.8.0",
-        "sha256sum": "48932e83edfc707fcada6af1f349238bf9444a3a99548a881d056c4194ff2df6",
+        "sha256sum": "1a926182aa16cc7ba77e278851a62f33995e2515e01c7a99932bb6e7f853b0a9",
         "installdir": "bin/",
+        "fname": "proot-x86_64-4_8_0",
         "docs": "COPYING.proot",
         "urls": [
             "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/proot-x86_64-4_8_0.tgz",
@@ -176,16 +207,17 @@
         ]
     },
     {
-        "uid": 9,
+        "uid": 10,
         "module": "runc",
-        "fname": "runc-x86_64.tgz",
+        "tarball": "runc-x86_64.tgz",
         "version": "1.1.4",
         "arch": "x86_64",
         "os": null,
         "os_ver": null,
         "kernel_ver": "",
-        "sha256sum": "730353f2ba043e8b8ec67ad52f1e966142a28c51317e0f0c03dee2fbe3ca851a",
+        "sha256sum": "074fc12378af8006c5356bedb3a9973b5964feacc79ff60a58be70176367ab3f",
         "installdir": "bin/",
+        "fname": "runc-x86_64",
         "docs": "LICENSE.runc",
         "urls": [
             "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/runc-x86_64.tgz",
@@ -198,16 +230,63 @@
         ]
     },
     {
-        "uid": 10,
+        "uid": 11,
+        "module": "runc",
+        "tarball": "runc-arm64.tgz",
+        "version": "1.1.4",
+        "arch": "arm64",
+        "os": null,
+        "os_ver": null,
+        "kernel_ver": "",
+        "sha256sum": "def28c08d79f66dea5c05e0fa420d1e91bd7edc9ed13cda1279f836a4651369b",
+        "installdir": "bin/",
+        "fname": "runc-arm64",
+        "docs": "LICENSE.runc",
+        "urls": [
+            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/runc-arm64.tgz",
+            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/runc-arm64.tgz"
+        ],
+        "dependencies": [],
+        "docs_url": [
+            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LICENSE.runc",
+            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LICENSE.runc"
+        ]
+    },
+    {
+        "uid": 12,
+        "module": "runc",
+        "tarball": "runc-ppc64le.tgz",
+        "version": "1.1.4",
+        "arch": "ppc64le",
+        "os": null,
+        "os_ver": null,
+        "kernel_ver": "",
+        "sha256sum": "301551f345829e6bd3ad28d9d9e808a576b070df82697094a68e181d2d41cb15",
+        "installdir": "bin/",
+        "fname": "runc-ppc64le",
+        "docs": "LICENSE.runc",
+        "urls": [
+            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/runc-ppc64le.tgz",
+            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/runc-ppc64le.tgz"
+        ],
+        "dependencies": [],
+        "docs_url": [
+            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LICENSE.runc",
+            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LICENSE.runc"
+        ]
+    },
+    {
+        "uid": 13,
         "module": "patchelf",
-        "fname": "patchelf-x86_64.tgz",
+        "tarball": "patchelf-x86_64.tgz",
         "version": "0.9",
         "arch": "x86_64",
         "os": null,
         "os_ver": null,
         "kernel_ver": "",
-        "sha256sum": "59aec10b389a9aa4003c6290ad13248bab315861b8fa2003a58ba752318abcae",
+        "sha256sum": "9acf2db637365bf10379bc3e51658a6f0d3303156457f7827b04d3f9f32f7e6a",
         "installdir": "bin/",
+        "fname": "patchelf-x86_64",
         "docs": "COPYING.patchelf",
         "urls": [
             "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/patchelf-x86_64.tgz",
@@ -220,138 +299,67 @@
         ]
     },
     {
-        "uid": 11,
-        "module": "libfakechroot",
-        "fname": "libfakechroot.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
+        "uid": 14,
+        "module": "patchelf",
+        "tarball": "patchelf-arm64.tgz",
+        "version": "0.9",
+        "arch": "arm64",
         "os": null,
         "os_ver": null,
         "kernel_ver": "",
-        "sha256sum": "bda9c5204efa9122295d31b18cf6fe37754920d4f233737895b048ae3480513a",
-        "installdir": "lib/",
-        "docs": "LIC-COPY-fakechroot.tgz",
+        "sha256sum": "2440412d3f8b162548ec138ecf63c69dabfdfeeb84c1fd0aec9e5f6ca0ddae27",
+        "installdir": "bin/",
+        "fname": "patchelf-arm64",
+        "docs": "COPYING.patchelf",
         "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 12,
-        "module": "all",
-        "fname": "udocker-englib-1.2.10.tar.gz",
-        "version": "1.2.10",
-        "arch": "",
-        "os": null,
-        "os_ver": null,
-        "kernel_ver": "",
-        "sha256sum": "c81a26f5bc9d363243d6d319120b57cd7949a5a46469df68c7a845f8ecee0e49",
-        "installdir": "./",
-        "docs": "udocker_all_lic.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/udocker-englib-1.2.10.tar.gz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/udocker-englib-1.2.10.tar.gz"
+            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/patchelf-arm64.tgz",
+            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/patchelf-arm64.tgz"
         ],
         "dependencies": [],
         "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/udocker_all_lic.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/udocker_all_lic.tgz"
-        ]
-    },
-    {
-        "uid": 13,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Fedora-33-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Fedora",
-        "os_ver": "33",
-        "kernel_ver": null,
-        "sha256sum": "cca692a9273eb957cb14b7bc0e1ba340609d4c055c7141a8d39fa4be06cf3eef",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Fedora-33-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Fedora-33-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 14,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-CentOS-7-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "CentOS",
-        "os_ver": "7",
-        "kernel_ver": null,
-        "sha256sum": "0a70b6675552948a241afce25a32d6ac00c7083ee1469911f860ed8e557a2920",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-CentOS-7-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-CentOS-7-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
+            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/COPYING.patchelf",
+            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/COPYING.patchelf"
         ]
     },
     {
         "uid": 15,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Debian-7-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Debian",
-        "os_ver": "7",
-        "kernel_ver": null,
-        "sha256sum": "28e7fe59d0654fe944c45bb6a983183d4df062ba78c39d0140e357d56481cd9e",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
+        "module": "patchelf",
+        "tarball": "patchelf-ppc64le.tgz",
+        "version": "0.9",
+        "arch": "ppc64le",
+        "os": null,
+        "os_ver": null,
+        "kernel_ver": "",
+        "sha256sum": "d17e2cfb1e3b44da7f7d3a13fca3a45da6460bea7c47409a8d20e4b69eda837e",
+        "installdir": "bin/",
+        "fname": "patchelf-ppc64le",
+        "docs": "COPYING.patchelf",
         "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Debian-7-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Debian-7-x86_64.so.tgz"
+            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/patchelf-ppc64le.tgz",
+            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/patchelf-ppc64le.tgz"
         ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
+        "dependencies": [],
         "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
+            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/COPYING.patchelf",
+            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/COPYING.patchelf"
         ]
     },
     {
         "uid": 16,
         "module": "libfakechroot",
-        "fname": "libfakechroot-Rocky-9-x86_64.so.tgz",
+        "tarball": "libfakechroot-x86_64.tgz",
         "version": "2.18",
         "arch": "x86_64",
-        "os": "Rocky",
-        "os_ver": "9",
-        "kernel_ver": null,
-        "sha256sum": "7ef232f632016ce1e6533885ac73b2d8c74a9c0c24af62b80700c00633ff9f6a",
-        "installdir": null,
+        "os": null,
+        "os_ver": null,
+        "kernel_ver": "",
+        "sha256sum": "c4280e0e3b3fa5ba6d94be0d43a2379d9d4390f08c96adc83cf4ba6be939d757",
+        "installdir": "lib/",
+        "fname": "",
         "docs": "LIC-COPY-fakechroot.tgz",
         "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Rocky-9-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Rocky-9-x86_64.so.tgz"
+            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-x86_64.tgz",
+            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-x86_64.tgz"
         ],
         "dependencies": [
             "patchelf-x86_64.tgz"
@@ -364,21 +372,22 @@
     {
         "uid": 17,
         "module": "libfakechroot",
-        "fname": "libfakechroot-Fedora-23-x86_64.so.tgz",
+        "tarball": "libfakechroot-arm64.tgz",
         "version": "2.18",
-        "arch": "x86_64",
-        "os": "Fedora",
-        "os_ver": "23",
-        "kernel_ver": null,
-        "sha256sum": "d3b02fd79d05e68c4a131d5d7b05bfc2eee617a99d41426230db2c8d72fa00ab",
-        "installdir": null,
+        "arch": "arm64",
+        "os": null,
+        "os_ver": null,
+        "kernel_ver": "",
+        "sha256sum": "534353dcaac2618e1cf45145115fcdc4e22096fc880f8abf6975bab948b4b1c0",
+        "installdir": "lib/",
+        "fname": "",
         "docs": "LIC-COPY-fakechroot.tgz",
         "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Fedora-23-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Fedora-23-x86_64.so.tgz"
+            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-arm64.tgz",
+            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-arm64.tgz"
         ],
         "dependencies": [
-            "patchelf-x86_64.tgz"
+            "patchelf-arm64.tgz"
         ],
         "docs_url": [
             "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
@@ -388,21 +397,22 @@
     {
         "uid": 18,
         "module": "libfakechroot",
-        "fname": "libfakechroot-CentOS-8-x86_64.so.tgz",
+        "tarball": "libfakechroot-ppc64le.tgz",
         "version": "2.18",
-        "arch": "x86_64",
-        "os": "CentOS",
-        "os_ver": "8",
-        "kernel_ver": null,
-        "sha256sum": "37eecb944184c0cc5c0645a582d3aebb4af4f1757b42f84a1489221bd7b5c9c4",
-        "installdir": null,
+        "arch": "ppc64le",
+        "os": null,
+        "os_ver": null,
+        "kernel_ver": "",
+        "sha256sum": "74fb8d69ff38848b9bbd353a73579f62f03e5f1be35cc889cfb8b5816b2fd5a3",
+        "installdir": "lib/",
+        "fname": "",
         "docs": "LIC-COPY-fakechroot.tgz",
         "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-CentOS-8-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-CentOS-8-x86_64.so.tgz"
+            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-ppc64le.tgz",
+            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-ppc64le.tgz"
         ],
         "dependencies": [
-            "patchelf-x86_64.tgz"
+            "patchelf-ppc64le.tgz"
         ],
         "docs_url": [
             "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
@@ -411,2354 +421,25 @@
     },
     {
         "uid": 19,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Alpine-3.8-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Alpine",
-        "os_ver": "3.8",
-        "kernel_ver": null,
-        "sha256sum": "158834d1c382184d1711c6e97d369e63207dae7cc2c75aa5b4d96b4dfe5da7cc",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Alpine-3.8-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Alpine-3.8-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 20,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Fedora-24-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Fedora",
-        "os_ver": "24",
-        "kernel_ver": null,
-        "sha256sum": "b743270dec2c70202e61177681dfc795723529d60c52787d68303e3fd8b320c2",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Fedora-24-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Fedora-24-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 21,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Alpine-3.14-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Alpine",
-        "os_ver": "3.14",
-        "kernel_ver": null,
-        "sha256sum": "693445fe7dc37c3b040e88f3bb9bc479f10f4207b13e111c21d982be26ffe06a",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Alpine-3.14-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Alpine-3.14-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 22,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Alpine-3.0-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Alpine",
-        "os_ver": "3.0",
-        "kernel_ver": null,
-        "sha256sum": "1d271bc0c6eec2a2951240630ffcb78eced5f769af255c1011ad56af852226ed",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Alpine-3.0-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Alpine-3.0-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 23,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-CentOS-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "CentOS",
+        "module": "all",
+        "tarball": "udocker-englib-1.2.10.tar.gz",
+        "version": "1.2.10",
+        "arch": "",
+        "os": null,
         "os_ver": null,
-        "kernel_ver": null,
-        "sha256sum": "5338f3ef6aabc1bfa23e6c60ae4fde89342afdad18affaff8b0fe54cbf413f45",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-CentOS-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-CentOS-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 24,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Ubuntu-19-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Ubuntu",
-        "os_ver": "19",
-        "kernel_ver": null,
-        "sha256sum": "2ce28156db39d9176fdcdacd9d0d4dbe44b60d421b1eda9a0fa8455b54d9e572",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Ubuntu-19-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Ubuntu-19-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 25,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Scientific-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Scientific",
-        "os_ver": null,
-        "kernel_ver": null,
-        "sha256sum": "38a190810565b7dc18c6c8cfe8c3ba7dbc5cd509e6405aa06dc0341d41ef161d",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Scientific-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Scientific-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 26,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Rocky-8-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Rocky",
-        "os_ver": "8",
-        "kernel_ver": null,
-        "sha256sum": "cb07f91eca95202109a6f3132c4b47466fbd265b17405a57021cdc51c1bf0832",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Rocky-8-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Rocky-8-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 27,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-LinuxMint-13-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "LinuxMint",
-        "os_ver": "13",
-        "kernel_ver": null,
-        "sha256sum": "193660f5433928c7ff3c0ed887c0d203fbb4e4443f2eeb220430ea79feea5d28",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-LinuxMint-13-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-LinuxMint-13-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 28,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-LinuxMint-17-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "LinuxMint",
-        "os_ver": "17",
-        "kernel_ver": null,
-        "sha256sum": "f2e044247ec51d243eb5d6836c4f7d0347ba5e4168d8ecd7f00213084124e963",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-LinuxMint-17-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-LinuxMint-17-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 29,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-LinuxMint-23-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "LinuxMint",
-        "os_ver": "23",
-        "kernel_ver": null,
-        "sha256sum": "8090ded0e70ac705979b36161eb89ac3059861f92cd89d99693ca122bcb7361a",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-LinuxMint-23-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-LinuxMint-23-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 30,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Ubuntu-17-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Ubuntu",
-        "os_ver": "17",
-        "kernel_ver": null,
-        "sha256sum": "fd80018a5e2d4cded851aa4ecc40f9710829ab0045efeb817e11ab732e9f7da5",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Ubuntu-17-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Ubuntu-17-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 31,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-CentOS-6-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "CentOS",
-        "os_ver": "6",
-        "kernel_ver": null,
-        "sha256sum": "2ae441a36500f137c57be9b4d5939e7e3e1e17a8e4f4fabc340033075323b65c",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-CentOS-6-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-CentOS-6-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 32,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-CentOS-9-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "CentOS",
-        "os_ver": "9",
-        "kernel_ver": null,
-        "sha256sum": "38dace4ba58cb6fd550ccbfd349d9f87c76a4b7d3e16daff44b01358d848e917",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-CentOS-9-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-CentOS-9-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 33,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Red-4-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Red",
-        "os_ver": "4",
-        "kernel_ver": null,
-        "sha256sum": "b1e1dfe02180b6c8ccf9a1197eea8de3f6fc63e172ffb31db39057ac013781b2",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Red-4-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Red-4-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 34,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Debian-11-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Debian",
-        "os_ver": "11",
-        "kernel_ver": null,
-        "sha256sum": "1aa8974a806ae3312b95a4e16eac7f53d07201b583188a72a6b7c470ef14760b",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Debian-11-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Debian-11-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 35,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-LinuxMint-22-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "LinuxMint",
-        "os_ver": "22",
-        "kernel_ver": null,
-        "sha256sum": "1f2e436fb7e91a4822b48246f9ec2d780e8479f6a833a88db17cce955375b0b1",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-LinuxMint-22-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-LinuxMint-22-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 36,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Ubuntu-18-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Ubuntu",
-        "os_ver": "18",
-        "kernel_ver": null,
-        "sha256sum": "2334c2868f00433b1ebdd3838342d131e22a059330fef3fe62185665c5cdf99e",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Ubuntu-18-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Ubuntu-18-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 37,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "libfakechroot",
-        "os_ver": null,
-        "kernel_ver": null,
-        "sha256sum": "5394d4817c8d1e5afeee527caa523567e6a48afdda79ed21324a32102f8920dd",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 38,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Alpine-3.16-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Alpine",
-        "os_ver": "3.16",
-        "kernel_ver": null,
-        "sha256sum": "a8685ec3ac485b48e0b56fd555cf879be23952bf8fd87a9d260278045b12c438",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Alpine-3.16-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Alpine-3.16-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 39,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Alpine-3.10-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Alpine",
-        "os_ver": "3.10",
-        "kernel_ver": null,
-        "sha256sum": "59d93b7c1581d2e9d8df6b70a450366f483623303c5dc1736f1ebd50a9771855",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Alpine-3.10-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Alpine-3.10-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 40,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Fedora-35-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Fedora",
-        "os_ver": "35",
-        "kernel_ver": null,
-        "sha256sum": "8ca85a25e1c50b35344f2690068d04f34ad4688a8edf2bf386906483639ee0ff",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Fedora-35-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Fedora-35-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 41,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-CentOS-5-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "CentOS",
-        "os_ver": "5",
-        "kernel_ver": null,
-        "sha256sum": "1ace13bdda4e64d8df15165f1b2fc943a1918fdad28104a93c1711c3d78fdd69",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-CentOS-5-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-CentOS-5-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 42,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Fedora-28-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Fedora",
-        "os_ver": "28",
-        "kernel_ver": null,
-        "sha256sum": "93a6f803ba3a73efa48c13c014a0dfc10feea3d98a815cdff0f8b7db3bd760be",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Fedora-28-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Fedora-28-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 43,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-LinuxMint-16-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "LinuxMint",
-        "os_ver": "16",
-        "kernel_ver": null,
-        "sha256sum": "28321fa16adccf9f34c8d268826f33287da6f262cb3b816ca5c4c33417abb971",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-LinuxMint-16-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-LinuxMint-16-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 44,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Fedora-19-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Fedora",
-        "os_ver": "19",
-        "kernel_ver": null,
-        "sha256sum": "3434fcfa0a90c38097ec4efa29acb42116808bb66cdb9587e6a5f7ff6b63dc38",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Fedora-19-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Fedora-19-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 45,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Fedora-18-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Fedora",
-        "os_ver": "18",
-        "kernel_ver": null,
-        "sha256sum": "c2e362c0a2ea5959272b06aa5cf28e214c96399f04f3604dea0ea1314056f7a9",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Fedora-18-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Fedora-18-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 46,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Fedora-30-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Fedora",
-        "os_ver": "30",
-        "kernel_ver": null,
-        "sha256sum": "fc8040842f069da8005f5f30068682b67ac013859cacfa44fd8c4e9809c270ea",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Fedora-30-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Fedora-30-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 47,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Red-7-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Red",
-        "os_ver": "7",
-        "kernel_ver": null,
-        "sha256sum": "b6e8856e12f8118ee90df38322b12e70d72dda8c1120d13969e229377268905b",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Red-7-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Red-7-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 48,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Fedora-22-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Fedora",
-        "os_ver": "22",
-        "kernel_ver": null,
-        "sha256sum": "da6ccae43422e17b9627cfd7450175f80cbf2d48787a1cb69b3ea54a81adb100",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Fedora-22-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Fedora-22-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 49,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Alpine-3.18-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Alpine",
-        "os_ver": "3.18",
-        "kernel_ver": null,
-        "sha256sum": "5942771e689519e1eebb98c3199e1cf252911c89d9a9dbd125e36c3902006f82",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Alpine-3.18-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Alpine-3.18-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 50,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-LinuxMint-21-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "LinuxMint",
-        "os_ver": "21",
-        "kernel_ver": null,
-        "sha256sum": "02e9885b584c2a1fce529cefb6b8d81b7e9d6cb656144f404d3598aef390e309",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-LinuxMint-21-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-LinuxMint-21-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 51,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Fedora-25-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Fedora",
-        "os_ver": "25",
-        "kernel_ver": null,
-        "sha256sum": "6f13e574a3f8f39e4213f03b6dabf8d0754adc1b58d998664209fc07dd0e3eff",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Fedora-25-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Fedora-25-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 52,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Alpine-3.15-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Alpine",
-        "os_ver": "3.15",
-        "kernel_ver": null,
-        "sha256sum": "265d82c9507f9cc0c2f2bce90e4d3d66d30e989b033e948e8c1d35c3e57551bd",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Alpine-3.15-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Alpine-3.15-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 53,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Red-5-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Red",
-        "os_ver": "5",
-        "kernel_ver": null,
-        "sha256sum": "0cb344987836351c271ce80c48ecd9bd0b1e13d364ed3f121baf4bb2c8fd7928",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Red-5-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Red-5-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 54,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-LinuxMint-11-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "LinuxMint",
-        "os_ver": "11",
-        "kernel_ver": null,
-        "sha256sum": "c50ef7e9ce780c614b6adeebee24f092a067b2b4b8ff31ea54fb90cab9d5fa99",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-LinuxMint-11-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-LinuxMint-11-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 55,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Ubuntu-11-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Ubuntu",
-        "os_ver": "11",
-        "kernel_ver": null,
-        "sha256sum": "26238502506c7cfb409822744251d07d819ff91c35e250192855e94caf1638de",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Ubuntu-11-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Ubuntu-11-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 56,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-LinuxMint-10-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "LinuxMint",
-        "os_ver": "10",
-        "kernel_ver": null,
-        "sha256sum": "ee507df7776e14be299476764659cb4935f3169ca7c59ae089f06f68a411d4d0",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-LinuxMint-10-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-LinuxMint-10-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 57,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Fedora-38-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Fedora",
-        "os_ver": "38",
-        "kernel_ver": null,
-        "sha256sum": "1cb2e83aee53f8694693901c36c9fc129ce69c3dcaf05c688c9f1e5eaf119c83",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Fedora-38-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Fedora-38-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 58,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Alpine-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Alpine",
-        "os_ver": null,
-        "kernel_ver": null,
-        "sha256sum": "08c5476decd2a0f481ce848ec7ba6b4aa5287337f5c09d9555c737b9bc6ecea2",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Alpine-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Alpine-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 59,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Scientific-6-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Scientific",
-        "os_ver": "6",
-        "kernel_ver": null,
-        "sha256sum": "cd5c5742616d983fdf41aff899e13848d6351b616a22415e29976b42c4c8f2f6",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Scientific-6-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Scientific-6-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 60,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Fedora-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Fedora",
-        "os_ver": null,
-        "kernel_ver": null,
-        "sha256sum": "d64883772296371bc645e56f97ed3e32c6773833e48c0a9f67ee7b096fb777a9",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Fedora-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Fedora-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 61,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Red-8-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Red",
-        "os_ver": "8",
-        "kernel_ver": null,
-        "sha256sum": "9dc3d190f6eb06be4b296d698b0cab3cf45a874d4f8cbbd24da7a1a75dd63f0f",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Red-8-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Red-8-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 62,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Fedora-31-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Fedora",
-        "os_ver": "31",
-        "kernel_ver": null,
-        "sha256sum": "17c314660834c0ce9d355f5db339457ef9b85a2b5c1bc96043f64b237aa7b73e",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Fedora-31-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Fedora-31-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 63,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Fedora-20-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Fedora",
-        "os_ver": "20",
-        "kernel_ver": null,
-        "sha256sum": "027944c95d3ab43e0cf516258c8e18b8f7ea2e42cc6fc18bc159c92c67d2fbbd",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Fedora-20-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Fedora-20-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 64,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Debian-10-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Debian",
-        "os_ver": "10",
-        "kernel_ver": null,
-        "sha256sum": "9ee0e9aad7a49d906b3809d1b4ae84efb2e7d2715e3d3c02bd748e941c3e454e",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Debian-10-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Debian-10-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 65,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Alpine-3.12-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Alpine",
-        "os_ver": "3.12",
-        "kernel_ver": null,
-        "sha256sum": "3487bef4082591fc5dd3b40f8ce54fa125b6ee670bc7889bfb3e136175ab9edf",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Alpine-3.12-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Alpine-3.12-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 66,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-LinuxMint-14-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "LinuxMint",
-        "os_ver": "14",
-        "kernel_ver": null,
-        "sha256sum": "dce2ec212ef027d381fa3ed472f5d5dc519fb4edd3e88fd2a02c2b0f97043f3b",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-LinuxMint-14-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-LinuxMint-14-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 67,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Alpine-3.5-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Alpine",
-        "os_ver": "3.5",
-        "kernel_ver": null,
-        "sha256sum": "3bd631b9e007cd80352eeb46dd60297b0de7fb1afac7b9b250aa2cf081132b4f",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Alpine-3.5-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Alpine-3.5-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 68,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-LinuxMint-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "LinuxMint",
-        "os_ver": null,
-        "kernel_ver": null,
-        "sha256sum": "11f5f3fa8fd701e8141312ebeec7f04f5015d49159bf58820c17ba73d66bde70",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-LinuxMint-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-LinuxMint-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 69,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Scientific-5-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Scientific",
-        "os_ver": "5",
-        "kernel_ver": null,
-        "sha256sum": "95573a74e52b73d42f0b0cbc43a01c455fe7de30450d7e6e652706ab288d54ef",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Scientific-5-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Scientific-5-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 70,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Red-9-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Red",
-        "os_ver": "9",
-        "kernel_ver": null,
-        "sha256sum": "b99b4039aabdeefdcf1bff47083e8e6f242c2049049fd4308296bb3d2f4930ed",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Red-9-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Red-9-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 71,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Ubuntu-21-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Ubuntu",
-        "os_ver": "21",
-        "kernel_ver": null,
-        "sha256sum": "eae0fe8258bf0d6eab812d8bc84508f8b58fd1145e18586aac03add759c6d9ac",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Ubuntu-21-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Ubuntu-21-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 72,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Ubuntu-9-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Ubuntu",
-        "os_ver": "9",
-        "kernel_ver": null,
-        "sha256sum": "e939e291ded66cb422b61955777265f030d064770f62b65a80171223dd825546",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Ubuntu-9-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Ubuntu-9-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 73,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Ubuntu-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Ubuntu",
-        "os_ver": null,
-        "kernel_ver": null,
-        "sha256sum": "c10c570372db33dfc750365e4ed1077a81cb4ea1aaf3a59948f6d8dca772aa85",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Ubuntu-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Ubuntu-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 74,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Alpine-3.3-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Alpine",
-        "os_ver": "3.3",
-        "kernel_ver": null,
-        "sha256sum": "e17043bdd2b5705f1cc71dbcedae2976acdebc72cc587c162f12d935f5e97099",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Alpine-3.3-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Alpine-3.3-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 75,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Rocky-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Rocky",
-        "os_ver": null,
-        "kernel_ver": null,
-        "sha256sum": "8fbeedb4cb49da2733e648f25d3f5e763f630261bf0d7a2b8ad36a1c38e4a423",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Rocky-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Rocky-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 76,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-AlmaLinux-8-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "AlmaLinux",
-        "os_ver": "8",
-        "kernel_ver": null,
-        "sha256sum": "1319cf8d2cf48e6138ec04bce5a9b0e0d72d3b3261449e30546fe34055423f0d",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-AlmaLinux-8-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-AlmaLinux-8-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 77,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Ubuntu-13-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Ubuntu",
-        "os_ver": "13",
-        "kernel_ver": null,
-        "sha256sum": "90f7e8e568081ef38219b8c6a9a28629072182122b30fc5ece9b0c9842bb2850",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Ubuntu-13-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Ubuntu-13-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 78,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Alpine-3.13-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Alpine",
-        "os_ver": "3.13",
-        "kernel_ver": null,
-        "sha256sum": "eaebceba2b6780df7467e313d0b178b09da612530f7e710354bae845e7b1f40f",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Alpine-3.13-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Alpine-3.13-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 79,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Alpine-3.2-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Alpine",
-        "os_ver": "3.2",
-        "kernel_ver": null,
-        "sha256sum": "bf5595e3f21cc4be415b7edc099d8ba2eda85c25dc160adceb2ca75e587a4024",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Alpine-3.2-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Alpine-3.2-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 80,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Fedora-26-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Fedora",
-        "os_ver": "26",
-        "kernel_ver": null,
-        "sha256sum": "b372e30399df4a2759498ae9a7018bd8fd714b3431eb6d7d1ec679970a87a2f8",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Fedora-26-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Fedora-26-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 81,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Red-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Red",
-        "os_ver": null,
-        "kernel_ver": null,
-        "sha256sum": "1d9be2402eb89c268b87220c0bd8085bc1067f3f38699a755a11fb4737bd427f",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Red-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Red-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 82,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Scientific-4-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Scientific",
-        "os_ver": "4",
-        "kernel_ver": null,
-        "sha256sum": "387cea13588cb43d93e671dfe7586f20891e3cc5def7e4fd4361729a8971fae3",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Scientific-4-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Scientific-4-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 83,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-AlmaLinux-9-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "AlmaLinux",
-        "os_ver": "9",
-        "kernel_ver": null,
-        "sha256sum": "3b68065277fb7cc619752c47ec823cddd33799f30442284849ac5e9a702dafb0",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-AlmaLinux-9-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-AlmaLinux-9-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 84,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Alpine-3.6-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Alpine",
-        "os_ver": "3.6",
-        "kernel_ver": null,
-        "sha256sum": "0552410fc6a460e341a28f3bbde3ed3cecb876cefc6fd0a0397d96d73a53aa4e",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Alpine-3.6-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Alpine-3.6-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 85,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Fedora-37-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Fedora",
-        "os_ver": "37",
-        "kernel_ver": null,
-        "sha256sum": "07dc14be67cb16a3a8d9c7e7a16de23711d62959deeb9c4f5bde3a57f8f9c90a",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Fedora-37-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Fedora-37-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 86,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Alpine-3.9-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Alpine",
-        "os_ver": "3.9",
-        "kernel_ver": null,
-        "sha256sum": "5fd68a5b00f014587dc7d6c0dae82838324bf134bf863f6ed915e5229aa42bd8",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Alpine-3.9-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Alpine-3.9-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 87,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Ubuntu-22-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Ubuntu",
-        "os_ver": "22",
-        "kernel_ver": null,
-        "sha256sum": "6ad610e352a56b1a366e36d42e85d320f2549f805fa3a1e5703d8dd479a86625",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Ubuntu-22-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Ubuntu-22-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 88,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Ubuntu-10-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Ubuntu",
-        "os_ver": "10",
-        "kernel_ver": null,
-        "sha256sum": "73c449b4177e935558cc10e3fc9dfcd2a041657d4ee1eee1b88b6edd60a6dd23",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Ubuntu-10-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Ubuntu-10-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 89,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-CentOS-4-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "CentOS",
-        "os_ver": "4",
-        "kernel_ver": null,
-        "sha256sum": "725c733f27a543ec7e357d6fd964ecfaee9862de4be7c4568b46a88469d1b271",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-CentOS-4-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-CentOS-4-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 90,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-LinuxMint-18-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "LinuxMint",
-        "os_ver": "18",
-        "kernel_ver": null,
-        "sha256sum": "5db7e781785b7c39ddf2bc104601d2f1b38f5d4974489f0d6a975fdb11f739f8",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-LinuxMint-18-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-LinuxMint-18-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 91,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Ubuntu-14-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Ubuntu",
-        "os_ver": "14",
-        "kernel_ver": null,
-        "sha256sum": "8adc2dc703f363626566f5e841c0e4009e58f3b964e9ddf58234b30eaabe7ded",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Ubuntu-14-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Ubuntu-14-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 92,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Debian-8-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Debian",
-        "os_ver": "8",
-        "kernel_ver": null,
-        "sha256sum": "3afc998ffc497fc4432cce428b2b32cf870b0971594f45334f6cfc4dbaa8388f",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Debian-8-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Debian-8-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 93,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Alpine-3.17-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Alpine",
-        "os_ver": "3.17",
-        "kernel_ver": null,
-        "sha256sum": "a52895d548ba7a3b1b74ce282785f2a6e90baa4a8d17a0255e19d0481d4b1f41",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Alpine-3.17-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Alpine-3.17-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 94,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Fedora-29-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Fedora",
-        "os_ver": "29",
-        "kernel_ver": null,
-        "sha256sum": "96a7153aa8b2462a9f1cc1e7c9ce97b10b7ec632387639f5099179cd7183d7e1",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Fedora-29-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Fedora-29-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 95,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Scientific-7-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Scientific",
-        "os_ver": "7",
-        "kernel_ver": null,
-        "sha256sum": "b9b5ff968e3460adb482a3ad5c372fe6c1ed59ed85a99fe5304598aeb04ddfbc",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Scientific-7-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Scientific-7-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 96,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-LinuxMint-20-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "LinuxMint",
-        "os_ver": "20",
-        "kernel_ver": null,
-        "sha256sum": "d5604c294db30e09f28f838acfccc94868130046cfa29bf928bf6fc932d39ed5",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-LinuxMint-20-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-LinuxMint-20-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 97,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Alpine-3.11-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Alpine",
-        "os_ver": "3.11",
-        "kernel_ver": null,
-        "sha256sum": "f5de534b1f76f5233af6f5a69b2af75bb8bf516dcf39b1bbdbb087dd07e9a37d",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Alpine-3.11-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Alpine-3.11-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 98,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Ubuntu-23-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Ubuntu",
-        "os_ver": "23",
-        "kernel_ver": null,
-        "sha256sum": "a7b756b08b10914879151217b8e967581edf304829105bf329354a813327413c",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Ubuntu-23-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Ubuntu-23-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 99,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Fedora-32-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Fedora",
-        "os_ver": "32",
-        "kernel_ver": null,
-        "sha256sum": "6177f8c6d2c819ea50a3bd59bcd4a54fbf576c0addf99f1512620e5c6d4cb0e5",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Fedora-32-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Fedora-32-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 100,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Red-6-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Red",
-        "os_ver": "6",
-        "kernel_ver": null,
-        "sha256sum": "48359d6c4c8057640a1b857668016d0a5dadd25ab9d036f4bffccb2c726c09ae",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Red-6-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Red-6-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 101,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Alpine-3.4-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Alpine",
-        "os_ver": "3.4",
-        "kernel_ver": null,
-        "sha256sum": "161e09f9f8b6315257ee65862e48eb06daead66e07060107498ed9d355602a66",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Alpine-3.4-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Alpine-3.4-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 102,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Ubuntu-20-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Ubuntu",
-        "os_ver": "20",
-        "kernel_ver": null,
-        "sha256sum": "6b2bb6dce0e0282b3556a361e318b5f708f0a85d79d81235e0852b95aac154bb",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Ubuntu-20-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Ubuntu-20-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 103,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Fedora-27-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Fedora",
-        "os_ver": "27",
-        "kernel_ver": null,
-        "sha256sum": "9f08af501b9c20f9d52cffa7a8f86d3cd4599976e782610efa540fde81fb41bd",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Fedora-27-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Fedora-27-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 104,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Alpine-3.1-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Alpine",
-        "os_ver": "3.1",
-        "kernel_ver": null,
-        "sha256sum": "4bdf0fdd6c2434b141c9cce0b5572cfc994bfe5ec50bff31b6d3906d48054f0d",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Alpine-3.1-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Alpine-3.1-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 105,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-LinuxMint-12-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "LinuxMint",
-        "os_ver": "12",
-        "kernel_ver": null,
-        "sha256sum": "0089feabfece8bc1605702e69cc3f320c4f50402eab02d7f46cf2d0d3785775d",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-LinuxMint-12-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-LinuxMint-12-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 106,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Debian-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Debian",
-        "os_ver": null,
-        "kernel_ver": null,
-        "sha256sum": "e4595e9a73b5128c953769ed2c7fa12eda82b37e49a9435d3a10a2786268c740",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Debian-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Debian-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 107,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Debian-9-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Debian",
-        "os_ver": "9",
-        "kernel_ver": null,
-        "sha256sum": "d058d03bb562d85e188d63ebf036d1376adcbb13004d4d38bcf614fad012302a",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Debian-9-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Debian-9-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 108,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Fedora-21-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Fedora",
-        "os_ver": "21",
-        "kernel_ver": null,
-        "sha256sum": "d44187eaed8094aa139deffdeaffafa1701f301dbb83730d0ef8769506630265",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Fedora-21-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Fedora-21-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 109,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-LinuxMint-15-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "LinuxMint",
-        "os_ver": "15",
-        "kernel_ver": null,
-        "sha256sum": "76bce764541cd1848e3b667e7fd4e8149f074125d27debaf547229847b4ab6d0",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-LinuxMint-15-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-LinuxMint-15-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 110,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Fedora-36-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Fedora",
-        "os_ver": "36",
-        "kernel_ver": null,
-        "sha256sum": "51ceb87e58ed1d7e3d21675806f1b90e3b2cd90ac3d37ac21c2d679c4465b131",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Fedora-36-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Fedora-36-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 111,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Ubuntu-15-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Ubuntu",
-        "os_ver": "15",
-        "kernel_ver": null,
-        "sha256sum": "4dcbc3287229eab867befb30209fa0bbde37ea71f12747138cfcef6d12b3dd86",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Ubuntu-15-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Ubuntu-15-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 112,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Ubuntu-12-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Ubuntu",
-        "os_ver": "12",
-        "kernel_ver": null,
-        "sha256sum": "fa82dab97c9036c9633b2a3fae53e9e007eecba232805cd2b5601ada5c9a11f2",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Ubuntu-12-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Ubuntu-12-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 113,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-LinuxMint-19-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "LinuxMint",
-        "os_ver": "19",
-        "kernel_ver": null,
-        "sha256sum": "3ba52eea676425ee5b0f69e1d09b7bd15864fc3cb0f8a898317ef3eeb0cd7383",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-LinuxMint-19-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-LinuxMint-19-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 114,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Fedora-34-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Fedora",
-        "os_ver": "34",
-        "kernel_ver": null,
-        "sha256sum": "4a3f6cb6d78c5d16740bfe52ce069245cecf7dcbbfd04475fbb6ecfc0b1b8d0d",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Fedora-34-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Fedora-34-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 115,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-AlmaLinux-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "AlmaLinux",
-        "os_ver": null,
-        "kernel_ver": null,
-        "sha256sum": "259413a3d209c250e945f212ddc170015dfd978b630948a025ab06a0d6c41acf",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-AlmaLinux-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-AlmaLinux-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
-        ]
-    },
-    {
-        "uid": 116,
-        "module": "libfakechroot",
-        "fname": "libfakechroot-Ubuntu-16-x86_64.so.tgz",
-        "version": "2.18",
-        "arch": "x86_64",
-        "os": "Ubuntu",
-        "os_ver": "16",
-        "kernel_ver": null,
-        "sha256sum": "10293b72c522cd125a4d105a87a72a4f823d7353fece1481284d318eb37fe255",
-        "installdir": null,
-        "docs": "LIC-COPY-fakechroot.tgz",
-        "urls": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/libfakechroot-Ubuntu-16-x86_64.so.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/libfakechroot-Ubuntu-16-x86_64.so.tgz"
-        ],
-        "dependencies": [
-            "patchelf-x86_64.tgz"
-        ],
-        "docs_url": [
-            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/LIC-COPY-fakechroot.tgz",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/LIC-COPY-fakechroot.tgz"
+        "kernel_ver": "",
+        "sha256sum": "03b4032b62775a020e8f1daf2c655dae5dd6a798e61c5ad913724460581c39b9",
+        "installdir": "./",
+        "fname": "",
+        "docs": "udocker_all_lic.tgz",
+        "urls": [
+            "https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/udocker-englib-1.2.10.tar.gz",
+            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/udocker-englib-1.2.10.tar.gz"
+        ],
+        "dependencies": [],
+        "docs_url": [
+            "https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/udocker_all_lic.tgz",
+            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/udocker_all_lic.tgz"
         ]
     }
 ]
