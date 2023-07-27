@@ -28,7 +28,7 @@ def create_jsonmodule():
     '''Create json structure for a module'''
     mod_json = {"uid": None,
                 "module": None,
-                "fname": None,
+                "tarball": None,
                 "version": None,
                 "arch": None,
                 "os": None,
@@ -57,7 +57,7 @@ def init_all_mods(fcsv):
                 mod_json[key] = row[key]
 
             for urldir in URL_DIRS:
-                mod_json["urls"].append(urldir + row["fname"])
+                mod_json["urls"].append(urldir + row["tarball"])
 
             for urldoc in URL_DOCS:
                 mod_json["docs_url"].append(urldoc + row["docs"])
@@ -85,7 +85,7 @@ def get_libfchroot(tar_dir, ref_module_fkchroot):
     list_lib_modules = []
     for lib_fkchr in list_libs:
         mod_json = create_jsonmodule()
-        mod_json['fname'] = lib_fkchr
+        mod_json['tarball'] = lib_fkchr
         mod_json['arch'] = ref_module_fkchroot['arch']
         mod_json['module'] = ref_module_fkchroot['module']
         mod_json['version'] = ref_module_fkchroot['version']
@@ -115,7 +115,7 @@ def get_sha256(tar_dir):
     '''Calculate the sha256sum of all tarballs of the tools and libraries'''
     nuid = 1
     for mod in ALL_MODULES:
-        tarball = tar_dir + mod['fname']
+        tarball = tar_dir + mod['tarball']
         with open(tarball, "rb") as f:
             fread_bytes = f.read()      # read entire file as bytes
             readable_hash = hashlib.sha256(fread_bytes).hexdigest()

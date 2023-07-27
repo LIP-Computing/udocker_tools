@@ -1,4 +1,4 @@
-module,version,arch,kernel_ver,fname,docs,installdir
+module,version,arch,kernel_ver,tarball,docs,installdir
 crun,1.6,x86_64,,crun-x86_64.tgz,COPYING.crun,bin/
 proot,5.1.1,arm,<4.8.0,proot-arm.tgz,COPYING.proot,bin/
 proot,5.1.1,arm64,<4.8.0,proot-arm64.tgz,COPYING.proot,bin/
