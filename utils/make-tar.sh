@@ -21,23 +21,25 @@ do
     tar zcvf ${TAR} ${fname}
 done
 
-cd ${LIB}
-echo "In dir: ${LIB}"
-for fname in `find . -name 'libfakechroot-*' -type f`
-do
-    TAR="${TAR_DIR}/${fname}.tgz"
-    tar zcvf ${TAR} ${fname}
-done
+# cd ${LIB}
+# echo "In dir: ${LIB}"
+# for fname in `find . -name 'libfakechroot-*' -type f`
+# do
+#     TAR="${TAR_DIR}/${fname}.tgz"
+#     tar zcvf ${TAR} ${fname}
+# done
+
+# cd ${LIB}
+# echo "In dir: ${LIB}"
+# for fname in `find . -name 'libfakechroot-*' -type l`
+# do
+#     link_to=`readlink ${fname} `
+#     echo "TARZipping: ${fname} and ${link_to}"
+#     TAR="${TAR_DIR}/${fname}.tgz"
+#     tar zcvfp ${TAR} ${fname} ${link_to}
+# done
 
 cd ${LIB}
-echo "In dir: ${LIB}"
-for fname in `find . -name 'libfakechroot-*' -type l`
-do
-    link_to=`readlink ${fname} `
-    echo "TARZipping: ${fname} and ${link_to}"
-    TAR="${TAR_DIR}/${fname}.tgz"
-    tar zcvfp ${TAR} ${fname} ${link_to}
-done
-
-cd ${LIB}
-tar zcvfp ${TAR_DIR}/libfakechroot.tgz libfakechroot-*
+tar zcvfp ${TAR_DIR}/libfakechroot-x86_64.tgz libfakechroot-*-x86_64.so
+tar zcvfp ${TAR_DIR}/libfakechroot-arm64.tgz libfakechroot-*-arm64.so
+tar zcvfp ${TAR_DIR}/libfakechroot-ppc64le.tgz libfakechroot-*-ppc64le.so

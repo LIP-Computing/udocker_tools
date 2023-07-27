@@ -18,28 +18,29 @@ import hashlib
 
 
 ALL_MODULES = []
-URL_DIRS = ["https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/"]
-URL_DOCS = ["https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/",
-            "https://github.com/LIP-Computing/udocker_tools/raw/main/docs/"]
+URL_DIRS = ['https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/',
+            'https://github.com/LIP-Computing/udocker_tools/raw/main/tarballs/']
+URL_DOCS = ['https://download.ncg.ingrid.pt/webdav/udocker/engines/doc/',
+            'https://github.com/LIP-Computing/udocker_tools/raw/main/docs/']
 
 
 def create_jsonmodule():
     '''Create json structure for a module'''
-    mod_json = {"uid": None,
-                "module": None,
-                "tarball": None,
-                "version": None,
-                "arch": None,
-                "os": None,
-                "os_ver": None,
-                "kernel_ver": None,
-                "sha256sum": None,
-                "installdir": None,
-                "docs": None,
-                "urls": [],
-                "dependencies": [],
-                "docs_url": []}
+    mod_json = {'uid': None,
+                'module': None,
+                'tarball': None,
+                'version': None,
+                'arch': None,
+                'os': None,
+                'os_ver': None,
+                'kernel_ver': None,
+                'sha256sum': None,
+                'installdir': None,
+                'fname': None,
+                'docs': None,
+                'urls': [],
+                'dependencies': [],
+                'docs_url': []}
     return mod_json
 
 
@@ -57,10 +58,10 @@ def init_all_mods(fcsv):
                 mod_json[key] = row[key]
 
             for urldir in URL_DIRS:
-                mod_json["urls"].append(urldir + row["tarball"])
+                mod_json['urls'].append(urldir + row['tarball'])
 
             for urldoc in URL_DOCS:
-                mod_json["docs_url"].append(urldoc + row["docs"])
+                mod_json['docs_url'].append(urldoc + row['docs'])
 
             if mod_json['module'] == 'libfakechroot':
                 mod_json['dependencies'].append('patchelf-x86_64.tgz')
@@ -101,10 +102,10 @@ def get_libfchroot(tar_dir, ref_module_fkchroot):
             mod_json['os'] = opsys_ver
 
         for urldir in URL_DIRS:
-            mod_json["urls"].append(urldir + lib_fkchr)
+            mod_json['urls'].append(urldir + lib_fkchr)
 
         for urldoc in URL_DOCS:
-            mod_json["docs_url"].append(urldoc + ref_module_fkchroot['docs'])
+            mod_json['docs_url'].append(urldoc + ref_module_fkchroot['docs'])
 
         list_lib_modules.append(mod_json)
 
@@ -116,7 +117,7 @@ def get_sha256(tar_dir):
     nuid = 1
     for mod in ALL_MODULES:
         tarball = tar_dir + mod['tarball']
-        with open(tarball, "rb") as f:
+        with open(tarball, 'rb') as f:
             fread_bytes = f.read()      # read entire file as bytes
             readable_hash = hashlib.sha256(fread_bytes).hexdigest()
             mod['sha256sum'] = readable_hash
@@ -126,8 +127,8 @@ def get_sha256(tar_dir):
 
 if __name__ == '__main__':
     rel_tar_dir = '../tarballs/'
-    fjson = "../data/metadata.json"
-    file_csv = "../data/module-keep.csv"
+    fjson = '../data/metadata.json'
+    file_csv = '../data/module-keep.csv'
     init_all_mods(file_csv)
     ref_mod_fkchroot = get_ref_fkchroot()
     libs_fkchroot = get_libfchroot(rel_tar_dir, ref_mod_fkchroot)
