@@ -47,6 +47,16 @@ basic manual information about the binaries and libraries, it calculates the sha
 produces the json file `metadata.json`, containing all information needed for the udocker commands
 to install one or more modules.
 
+```bash
+cd utils
+python make_meta.py
+```
+
+At this point one needs to copy the `metadata.json` to the place where it should be signed. This will
+produce metadata.json.asc that should be copied to the `data` directory in this repo.
+
+
+
 ## Contributing
 
 See: [Contributing](CONTRIBUTING.md)

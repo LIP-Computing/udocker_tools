@@ -48,11 +48,7 @@ def init_all_mods(fcsv):
     '''Initialize the list of all modules'''
     with open(fcsv, 'r', encoding='utf-8') as csvin:
         csv_reader = csv.DictReader(csvin, delimiter=',')
-        line_count = 0
         for row in csv_reader:
-            if line_count == 0:
-                line_count += 1
-
             mod_json = create_jsonmodule()
             for key in row:
                 mod_json[key] = row[key]
@@ -67,50 +63,49 @@ def init_all_mods(fcsv):
                 depend = 'patchelf-' + mod_json['arch'] + '.tgz'
                 mod_json['dependencies'].append(depend)
 
-            line_count += 1
             ALL_MODULES.append(mod_json)
 
 
-def get_ref_fkchroot():
-    '''Get libfakechroot reference module'''
-    ref_mod = {}
-    for mod in ALL_MODULES:
-        if mod['module'] == 'libfakechroot':
-            ref_mod = mod
+# def get_ref_fkchroot():
+#     '''Get libfakechroot reference module'''
+#     ref_mod = {}
+#     for mod in ALL_MODULES:
+#         if mod['module'] == 'libfakechroot':
+#             ref_mod = mod
 
-    return ref_mod
+#     return ref_mod
 
 
-def get_libfchroot(tar_dir, ref_module_fkchroot):
-    '''Get the list of all libfakechroot for all OSs and Versions'''
-    list_libs = [os.path.basename(x) for x in glob.glob(tar_dir + 'libfakechroot-*.so.tgz')]
-    list_lib_modules = []
-    for lib_fkchr in list_libs:
-        mod_json = create_jsonmodule()
-        mod_json['tarball'] = lib_fkchr
-        mod_json['arch'] = ref_module_fkchroot['arch']
-        mod_json['module'] = ref_module_fkchroot['module']
-        mod_json['version'] = ref_module_fkchroot['version']
-        mod_json['docs'] = ref_module_fkchroot['docs']
-        mod_json['dependencies'].append('patchelf-x86_64.tgz')
+# def get_libfchroot(tar_dir, ref_module_fkchroot):
+#     '''Get the list of all libfakechroot for all OSs and Versions'''
+#     list_libs = [os.path.basename(x) for x in glob.glob(tar_dir + 'libfakechroot-*.so.tgz')]
+#     list_lib_modules = []
+#     for lib_fkchr in list_libs:
+#         mod_json = create_jsonmodule()
+#         mod_json['tarball'] = lib_fkchr
+#         mod_json['arch'] = ref_module_fkchroot['arch']
+#         mod_json['module'] = ref_module_fkchroot['module']
+#         mod_json['version'] = ref_module_fkchroot['version']
+#         mod_json['docs'] = ref_module_fkchroot['docs']
+#         mod_json['dependencies'].append('patchelf-x86_64.tgz')
 
-        opsys_ver = lib_fkchr.removesuffix('-x86_64.so.tgz').removeprefix('libfakechroot-')
-        if '-' in opsys_ver:
-            (opsys, os_ver) = opsys_ver.split('-')
-            mod_json['os'] = opsys
-            mod_json['os_ver'] = os_ver
-        else:
-            mod_json['os'] = opsys_ver
+#         opsys_ver = lib_fkchr.removesuffix('-x86_64.so.tgz').removeprefix('libfakechroot-')
+#         if '-' in opsys_ver:
+#             (opsys, os_ver) = opsys_ver.split('-')
+#             mod_json['os'] = opsys
+#             mod_json['os_ver'] = os_ver
+#         else:
+#             mod_json['os'] = opsys_ver
 
-        for urldir in URL_DIRS:
-            mod_json['urls'].append(urldir + lib_fkchr)
+#         for urldir in URL_DIRS:
+#             mod_json['urls'].append(urldir + lib_fkchr)
 
-        for urldoc in URL_DOCS:
-            mod_json['docs_url'].append(urldoc + ref_module_fkchroot['docs'])
+#         for urldoc in URL_DOCS:
+#             mod_json['docs_url'].append(urldoc + ref_module_fkchroot['docs'])
 
-        list_lib_modules.append(mod_json)
+#         list_lib_modules.append(mod_json)
 
-    return list_lib_modules
+#     return list_lib_modules
 
 
 def get_sha256(tar_dir):
