@@ -53,9 +53,12 @@ python make_meta.py
 ```
 
 At this point one needs to copy the `metadata.json` to the place where it should be signed. This will
-produce metadata.json.asc that should be copied to the `data` directory in this repo.
+produce `metadata.json.asc` that should be copied to the `data` directory in this repo.
 
-
+Upload  `metadata.json` and `metadata.json.asc` to the webdav server
+`https://download.ncg.ingrid.pt/webdav/udocker/engines/` and the tarballs to
+`https://download.ncg.ingrid.pt/webdav/udocker/engines/tarballs/`, these are the URLs that udocker expects
+to find these files besides this repository.
 
 ## Contributing
 
